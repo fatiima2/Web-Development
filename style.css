@@ -1,0 +1,47 @@
+.main-body{
+    height:90vh;
+    width:100%;
+}
+.outerdiv{
+    height:100%;
+    width:100%;
+}
+.input-container{
+    width:100%;
+    height: 50%;
+    background-color: lightblue;
+    border-radius:5px;
+    margin-bottom: 10px;
+    
+}
+.keyboard-container {
+    width:100%;
+    height: 50%;
+    background-color:#014133;
+    padding-top: 20px;;
+}
+.text-input{
+    height:100%;
+    width:100%;
+
+}
+.keyboard-row{
+    display:flex;
+    justify-content:center;
+}
+.key{
+    background-color: #33665d;
+    border-radius: 5px;
+    color: white;
+    height:40px;
+    width:60px;
+    margin: 5px;
+}
+#dif-key{
+    background-color: #003126;
+}
+#key-space{
+    width:450px;
+    height:40px;
+}
+
