@@ -1,0 +1,266 @@
+var a;
+var b;
+var c="I am just a ";
+//Uninitialized
+a=a+b;
+b=b+2;
+c+="girl!!";
+console.log(c);
+//case Sensitivity
+var grade="A+";
+console.log(grade); //upper case G generated error!!
+//Sum,product,subtarction,quotient
+var x=20;
+let y=89;
+var sum=x+y;
+console.log(sum);
+let prod=x*y;
+console.log(prod);
+var quotient=x/y;
+console.log(quotient);
+//incrementing AND Decrementing
+quotient++;
+console.log(quotient)
+y=y-1;
+console.log(y)
+//remainder
+var rem=x%3;
+console.log(rem);
+//concatenating string;
+var mystring="Hello"+"World";
+console.log(mystring);
+var rzlt="hey guyz!!" + c;
+console.log(rzlt);
+rzltLength=rzlt.length;
+console.log(rzltLength);
+=====================================================
+function wordblanks(noun,adjective,verb,adverb)
+{
+    result=""
+    result+= "The " +adjective+" "+noun+" "+verb+" to the store "+adverb
+    return result
+}
+console.log(wordblanks("Cat","small","ran","quickly"))
+=====================================================
+var arr=["Fatima",18,"2nd Semester"]
+console.log(arr)
+arr[1]=19;
+console.log(arr);
+var arr2=[arr,12]
+console.log(arr2)
+=====================================================
+var arr=[["Fatima",18],["Khadija",24,"married"],["Irfa",14]];
+arr.push(["Sana",12]);
+var mydata=arr[2][0];
+console.log(arr)
+console.log(mydata);
+var removedArr=arr.pop();
+console.log(arr)
+=====================================================
+var names=["holes-in-one","eagle","birdie","par","bogey","double bogey","Go-home"]
+function golfScores(par,strokes)
+{
+    if (strokes==1)
+    {
+    return names[0];
+    }
+    else if(strokes<=par-2)
+    {
+    return names[1];
+    }
+    else if(strokes==par-1)
+    {
+    return names[2];
+    }
+    else if(strokes==par)
+    {
+    return names[3];
+    }
+    else if(strokes==par+1)
+    {
+    return names[4];
+    }
+    else if(strokes==par+2)
+    {
+    return names[5];
+    }
+    else if(strokes>=par+3)
+    {
+    return names[6];
+    }
+}
+console.log(golfScores(5,4))
+=====================================================
+function testSwitchStatement(val)
+{
+    var answer="";
+    switch(val)
+    {
+        case 1:
+            answer="alpha";
+            break;
+        case 2:
+            answer="beta"
+            break;
+        case 3:
+            answer="gamma"
+            break;
+        case 4:
+            answer="delta";
+            break;
+        default:
+            console.log("Invalid")
+            break;
+    }
+       return answer;
+
+}
+    console.log(testSwitchStatement(9))
+=====================================================
+var mycat={
+    "name":"Lucifer",
+    "legs":"4",
+    "tail":"1"
+}
+var catName=[mycat.name,mycat.tail];
+console.log(catName)
+var catLegs=mycat["legs"]
+console.log(catLegs)
+=====================================================
+var animal={
+    species:"cat",
+    color:"white",
+    sound:"meow meow"
+}
+var prop1="color"
+console.log(animal[prop1])
+=====================================================
+function objectsSwitch(val)
+{
+    var result=""
+var lookup={
+    90:"grade A",
+    80:"grade B",
+    70:"grade C",
+   60 :"grade D",
+   50 :"grade E",
+    40:"grade F"
+}
+result=lookup[val]
+return result
+}
+console.log((objectsSwitch(80)))
+=====================================================
+var myobject={
+    "car":"Civic",
+    "color":"White",
+    "year":"2022"
+}
+function checkHasOwnProperty(val)
+{
+    if(myobject.hasOwnProperty(val))
+    return  myobject[val];
+    else
+    return "Not found"
+}
+console.log((checkHasOwnProperty("fortuner")))
+//console.log((checkHasOwnProperty("year")))
+=====================================================
+var myplants=[
+{
+    type:"flowers",
+    list:
+    [
+        "rose",
+        "tulip",
+        "dandelion"
+        ]
+    },
+    {
+        type:"trees",
+        list:[
+            "fir",
+            "pine",
+            "birch"
+            ]
+    }
+    ];
+var result=myplants[1].list[2];
+console.log(result)
+=====================================================
+var person={
+    "name":"Fatima",
+    age:18,
+    Semester:2
+}
+var jsonStr=JSON.stringify(person)
+var parsed=JSON.parse(jsonStr)
+console.log(jsonStr)
+console.log(parsed)
+=====================================================
+function parseintUnderstanding(str)
+{
+    return parseInt(str)
+}
+console.log((parseintUnderstanding("89")))
+=====================================================
+function converttoint(str)
+{
+    return parseInt(str,16)
+}
+console.log((converttoint("10010")))
+=====================================================
+var greater=(a,b) => a>b?a:b
+console.log(greater(10,9))
+=====================================================
+const arr=[10,6,2.3,-1.1,7,-5]
+const squarelist = arr => {
+    const squaredInt= arr.filter(num=>Number.isInteger(num)&&num>0).map(x=>x*x)
+    return squaredInt
+}
+const squaredint=squarelist(arr)
+console.log(squaredint)
+=====================================================
+const sum=(function(){
+    return function sum(...args)
+    {
+    return args.reduce ((a,b)=>a+b,0)
+    };
+})();
+console.log(sum(10,20,30,40,60));
+=====================================================
+var voxel={x:1.2,y:7.9,z:2.3}
+var x=voxel.x;
+var y=voxel.y;
+var z=voxel.z;
+const{x:a,y:b,z:c}=voxel
+const avg_tempratures={
+    today:77.5,
+    tomorrow:79
+}
+function gettempoftom(avrgtemp)
+{
+    const {tomorrow:tempoftom}=avrgtemp
+    return tempoftom
+}
+console.log((gettempoftom(avg_tempratures)))
+=====================================================
+const person={
+    name:"Fatima",
+    age:18
+}
+const greetings=`Hello my name is ${person.name}! 
+i am ${person.age} years old`
+console.log(greetings)
+=====================================================
+
+
+
+
+
+
+
+
+
+
+
