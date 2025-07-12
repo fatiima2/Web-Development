@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+       <h1>Calculator</h1>
+    </header>
+   <br>
+   <section>
+        <label  id="n1"><b>Select first nmber: </b></label>
+        <input type="number" id="n1" placeholder="Enter first number">
+    <br>
+    <br>
+    <label for id="n2"><b>Select second nmber: </b></label>
+        <input type="number" id="n2" placeholder="Enter second number">
+   <br>
+    <br>
+</section>
+
+<Section>
+    <p> Select Operation which you want to perform: </p>
+     <label for="add"><b>+</b></label>
+    <input type="radio" value="add" id="add" name="operation">
+    <br><br>
+    <label for="Subtraction"><b>-</b></label>
+    <input type="radio" value="Subtraction" id="Subtraction" name="operation">
+    <br><br>
+    <label for="Multiplication"><b>*</b></label>
+    <input type="radio" value="Multiplication" id="Multiplication" name="operation">
+    <br><br>
+    <label for="Division" ><b>/</b></label>
+    <input type="radio" value="Division" id="Division" name="operation" >
+    <br>
+    <br>
+    <button id="calculate"><b>Calculate</b></button>
+</Section>
+    <br>
+    <Section>
+        <p><b>Result: </b></p>
+<textarea id="result" readonly ></textarea>
+    </Section>
+    <script src="Q5.js"></script>
+    
+</body>
