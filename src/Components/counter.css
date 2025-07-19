@@ -1,0 +1,22 @@
+#main-div{
+    display: flex;
+    justify-content: center;
+  
+  
+}
+#counter-div{
+    height:300px;
+    width:300px;
+    background-color: yellow;
+    border-radius: 7px;
+    
+}
+#btn{
+    width:40px;
+    height:40px;
+    border-radius:3px;
+    background-color: rgb(182, 175, 175);
+    color:black;
+    margin-right: 10px;
+    margin-top:15px;
+}
