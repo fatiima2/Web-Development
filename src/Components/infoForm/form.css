@@ -1,4 +1,4 @@
-.main-div{
+.container{
  display:flex;
   justify-content:center;
   align-items: center;
@@ -6,7 +6,7 @@
 }
 .form-div{
   
-    height:300px;
+    height:400px;
     width:500px;
     background-image: url("https://static.vecteezy.com/system/resources/previews/001/060/223/non_2x/rocket-is-flying-in-galaxy-space-of-the-universe-vector.jpg")
     
@@ -17,11 +17,11 @@
 }
 .input-styles{
     margin-bottom:15px;
-    margin-top:2px;
+    margin-top:20px;
     border-radius: 5px;
 }
 #input-design{
-    margin-top:20px;
+    margin-top:30px;
     border-radius:5px;
     margin-bottom:15px;
 }
