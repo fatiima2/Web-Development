@@ -1,6 +1,6 @@
 import React from "react";
 import './form.css' ;
-import './DisplayForm.jsx';
+import DisplayForm from "../DisplayForm/DisplayForm";
 
 const InfoForm= ({setfirstname,setlastname,setemail,setcontactno,setaddress}) => {
 
@@ -18,12 +18,7 @@ const InfoForm= ({setfirstname,setlastname,setemail,setcontactno,setaddress}) =>
                 <input name="phoneNo" type="text" class="input-styles" ></input><br/>
                 <label for="Address" className="label-Styles">Address: </label>
                 <input name="city" type="text" className="input-styles" ></input><br/>
-                <button id="btn">Submit</button>
-            </div>
-            <div className="display-div">
-                <h1>Information Form</h1>
-                <DisplayForm firstname="Fatima" lastname="Zahid" email="fatimazahid@gmail.com" contactno="1234567890" address="house no 34 street 2,Sargodha">
-                </DisplayForm>
+                <button id="btn" >Submit</button>
             </div>
         </div>
     </div> 

@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import './MainForm.jsx';
 import { useState } from 'react';
 //import Greeting from './Components/greeting';
 import Counter from './Components/counter';
