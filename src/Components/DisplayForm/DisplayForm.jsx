@@ -12,7 +12,9 @@ const DisplayForm = ({firstName,lastName,email,contactNo,Address}) =>{
                     Email: {email}<br/><br/>
                     contactNo: {contactNo}<br/><br/>
                     Address: {Address}
+                    <button id="show-btn">Show</button>
                 </p>
+                
             </div>
         </div>
     )

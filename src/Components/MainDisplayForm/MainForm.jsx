@@ -1,18 +1,25 @@
 import React from "react";
+import { useState } from 'react';
 import InfoForm from "../infoForm/form";
 import DisplayForm from "../DisplayForm/DisplayForm";
 import './MainForm.css';
 
 const MainForm = (props) => {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [contactNo, setContactno] = useState("");
+    const [address, setAddress] = useState("");
+
     return (
-        <div className="main-form">
-            <div className="display-div">
-                <InfoForm>
+        <div className="display-div">
+            <div className="main-form">
+
+                <InfoForm firstName={firstName} setFirstName={setFirstName} lastName={lastName} setLastName={setLastName} email={email} setEmail={setEmail}  contactNo={contactNo} setContactno={setContactno} address={address} setAddress={setAddress}>
                 </InfoForm>
                 <h1>Data is being displayed here</h1>
-                <DisplayForm firstName="Fatima" lastName="Zahid" email="fatimazahid@gmail.com" contactNo="1234567890" Address="house no 34 street 2,Sargodha">
-                    </DisplayForm>
-             </div>
+                <DisplayForm firstName={firstName} lastName={lastName} email={email} contactNo={contactNo} Address={address}>                  </DisplayForm>
+            </div>
 
         </div>
     );
