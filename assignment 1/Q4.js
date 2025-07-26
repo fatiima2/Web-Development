@@ -1,7 +1,7 @@
 const bulb=document.getElementById("bulb")
 const button=document.getElementById("toggle")
 let isOn=true
-function toggleBulb()
+let func1 = function toggleBulb(func1)
 {
     if(isOn)
     {
@@ -16,4 +16,4 @@ function toggleBulb()
     isOn=!isOn
 
 }
-button.addEventListener('click',toggleBulb)
+button.addEventListener('click',func1(func1))
