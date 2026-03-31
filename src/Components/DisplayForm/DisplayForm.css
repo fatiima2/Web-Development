@@ -1,6 +1,7 @@
 .main-display{
     display:flex;
     justify-content: centre;
+    margin-left: 50px;
 }
 .display{
     height:400px;
@@ -14,7 +15,8 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: black;
-    margin-top: 50px;
+    margin-top: 40px;
+    
 }
 #show-btn{
      width:300px;
